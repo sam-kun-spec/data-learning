@@ -30,6 +30,26 @@ print(np.min(arr))    # minimum
 print(np.max(arr))    # maximum
 print(np.std(arr))    # standard deviation , how spread out the numbers are from the mean. - mean = 30 (average)
 #std = 14.14 → numbers are ~14 units away from 30 on average
+"""
+consistent vs scattered — simple rule:
+std is LOW  → data is close together → consistent
+std is HIGH → data is spread out     → scattered
+
+but low and high is relative — compare std to mean: example:-
+pstd  = 20.6
+mean = 66.5
+
+# rough check
+ratio = std/mean = 0.31 → 31%
+if ratio > 20-25% → scattered ✅
+so your data = scattered
+
+real example — student marks:
+std = 2  → everyone scored similarly → teaching is working
+std = 20 → huge gap between students → some are struggling
+"""
+
+
 print(np.sqrt(arr))   # square root 
 
 
